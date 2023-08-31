@@ -21,6 +21,8 @@ output:
 ```{r}
 library(tidyverse)
 data<- read.csv("raw_data/data.csv")
+summary(data)
+head(data)
 
 ```
 
@@ -28,6 +30,13 @@ data<- read.csv("raw_data/data.csv")
 
 ## An interesting plot
 
+```{r}
+ggplot(data, mapping = aes(x = weight, y = TempC, color = Sex))
+geom_point()
+
+
+
+```
 
 
 
